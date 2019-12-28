@@ -6,7 +6,7 @@ with sr.Microphone() as source:
 try:
      print("transcription: " + r.recognize_google(audio))
 except sr.UnknownValueError:
-     print("sorry cant fuck that  audio")
+     print("sorry can't hear that")
 except sr.RequestError as e:
      print("cannot obtain results; {0}".format(e))
 
